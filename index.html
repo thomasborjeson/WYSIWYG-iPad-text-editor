@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iPad Text Editor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, height=device-height" />
+    <meta charset="UTF-8">
+    <meta name="description" content="WYSIWYG iPad text editor">
+    <script src="js/editor.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/editor.css">
+</head>
+<body spellcheck="false">
+<div class="main-container" id="main">
+
+    <div class="container" id ="container" >
+
+        <div id="editable" placeholder="Enter text..." contentEditable="true"></div>
+    </div>
+</div> <!-- main-container -->
+
+<div id="bar" class="bar" style="top: 350px; left: 350px;">
+
+    <img class="cross" src="images/cross.png">
+
+    <a href="#" onclick="execCmd('bold')"><b>B</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="execCmd('italic')"><i>I</i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="execCmd('underline')"><u>U</u></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <hr>
+
+    <a href="#" onclick="insertElement('Title')">Title</a>&nbsp;&nbsp;
+    <a href="#" onclick="insertElement('Link')">Link</a>&nbsp;&nbsp;
+    <a href="#" onclick="insertElement('UL')">List</a>&nbsp;&nbsp;
+    <a href="#" onclick="insertElement('BQ')">Quote</a>&nbsp;&nbsp;
+    <a href="#" onclick="insertImage()">Image</a>&nbsp;
+    <input id="fileToLoad" style="display: none" type="file" onchange="encodeImageFileAsURL();" />
+    <hr>
+    <a href="#" onclick="saveDocument()">Save document&nbsp;</a>
+</div>
+</body>
+</html>
+
+
