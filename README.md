@@ -6,7 +6,7 @@ There are two well-known problems when using text editors on the iOS iPad platfo
 * When the virtual keyboard pops up, this moves away any toolbar defined as a fixed html element.
 * When you select text, the iOS popup may hide parts of the addon toolbar.
 
-The first problem is solved by using a small draggable toolbar. The second problem is solve by using 'insert at caret' instead of 'style selected text'.
+The first problem is solved by using a small draggable toolbar. The second problem is solved by using 'insert at caret' instead of 'style selected text'.
 
 The same toolbar works on both tablet and PC platforms.
 It is easy to add more functions to the toolbar.
