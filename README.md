@@ -12,7 +12,7 @@ The same toolbar works on both tablet and PC platforms.
 It is easy to add more functions to the toolbar.
 The javascript code is just 200 lines with no dependencies.
 
-The toolbar is used for user input in this <a href=http://www.ex-pages.com">e-learning platform</a>
+The toolbar is used for user input in this <a href="http://www.ex-pages.com">e-learning platform</a>
 
 Thomas Borjeson
 
